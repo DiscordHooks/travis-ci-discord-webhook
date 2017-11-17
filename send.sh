@@ -1,0 +1,69 @@
+#!/bin/bash
+
+echo -e "[Webhook]: Sending webhook to Discord...\\n";
+
+case $1 in
+  "success" )
+    EMBED_COLOR=3066993
+    STATUS_MESSAGE="Passed"
+    ;;
+
+  "failure" )
+    EMBED_COLOR=15158332
+    STATUS_MESSAGE="Failed"
+    ;;
+
+  * )
+    EMBED_COLOR=0
+    STATUS_MESSAGE="Status Unknown"
+    ;;
+esac
+
+AUTHOR_NAME="$(git log -1 "$TRAVIS_COMMIT" --pretty="%aN")"
+COMMITTER_NAME="$(git log -1 "$TRAVIS_COMMIT" --pretty="%cN")"
+COMMIT_SUBJECT="$(git log -1 "$TRAVIS_COMMIT" --pretty="%s")"
+COMMIT_MESSAGE="$(git log -1 "$TRAVIS_COMMIT" --pretty="%b")"
+
+if [ "$AUTHOR_NAME" == "$COMMITTER_NAME" ]; then
+  CREDITS="$AUTHOR_NAME authored & committed"
+else
+  CREDITS="$AUTHOR_NAME authored & $COMMITTER_NAME committed"
+fi
+
+if [[ $TRAVIS_PULL_REQUEST != false ]]; then
+  URL="https://github.com/$TRAVIS_REPO_SLUG/pull/$TRAVIS_PULL_REQUEST"
+else
+  URL=""
+fi
+
+TIMESTAMP=$(date --utc +%FT%TZ)
+WEBHOOK_DATA='{
+  "username": "",
+  "avatar_url": "",
+  "embeds": [ {
+    "color": '$EMBED_COLOR',
+    "author": {
+      "name": "Build #'"$TRAVIS_BUILD_NUMBER"' '"$STATUS_MESSAGE"' - '"$TRAVIS_REPO_SLUG"'",
+      "url": "https://travis-ci.org/'"$TRAVIS_REPO_SLUG"'/builds/'"$TRAVIS_BUILD_ID"'"
+    },
+    "title": "'"$COMMIT_SUBJECT"'",
+    "url": "'"$URL"'",
+    "description": "'"${COMMIT_MESSAGE//$'\n'/ }"\\n\\n"$CREDITS"'",
+    "fields": [
+      {
+        "name": "Commit",
+        "value": "'"[\`${TRAVIS_COMMIT:0:7}\`](https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT)"'",
+        "inline": true
+      },
+      {
+        "name": "Branch/Tag",
+        "value": "'"[\`$TRAVIS_BRANCH\`](https://github.com/$TRAVIS_REPO_SLUG/tree/$TRAVIS_BRANCH)"'",
+        "inline": true
+      }
+    ],
+    "timestamp": "'"$TIMESTAMP"'"
+  } ]
+}'
+
+(curl -v --fail --progress-bar -A "TravisCI-Webhook" -H Content-Type:application/json -H X-Author:k3rn31p4nic#8383 -d "$WEBHOOK_DATA" "$WEBHOOK_URL" \
+  && echo -e "\\n[Webhook]: Successfully set the webhook.") || echo -e "\\n[Webhook]: Unable to send webhook."
