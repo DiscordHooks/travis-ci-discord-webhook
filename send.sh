@@ -43,7 +43,7 @@ WEBHOOK_DATA='{
   "embeds": [ {
     "color": '$EMBED_COLOR',
     "author": {
-      "name": "Build #'"$TRAVIS_BUILD_NUMBER"' '"$STATUS_MESSAGE"' - '"$TRAVIS_REPO_SLUG"'",
+      "name": "Job #'"$TRAVIS_JOB_NUMBER"' (Build #'"$TRAVIS_BUILD_NUMBER"') '"$STATUS_MESSAGE"' - '"$TRAVIS_REPO_SLUG"'",
       "url": "https://travis-ci.org/'"$TRAVIS_REPO_SLUG"'/builds/'"$TRAVIS_BUILD_ID"'"
     },
     "title": "'"$COMMIT_SUBJECT"'",
