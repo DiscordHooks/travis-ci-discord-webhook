@@ -32,11 +32,11 @@ just follow the guide below and stay notified of your build status.
 
     ```yaml
     after_success:
-      - wget https://raw.githubusercontent.com/snkrsnkampa/travis-ci-discord-webhook/master/send.sh
+      - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
       - ./send.sh success
     after_failure:
-      - wget https://raw.githubusercontent.com/snkrsnkampa/travis-ci-discord-webhook/master/send.sh
+      - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
       - ./send.sh failure
     ```
