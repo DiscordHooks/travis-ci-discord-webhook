@@ -28,17 +28,17 @@ just follow the guide below and stay notified of your build status.
 
     ![Add environment variable in Travis CI](https://i.imgur.com/UfXIoZn.png)
 
-1.  Add these lines to the `.travis-ci.yml` file of your repository.
+1.  Add these lines to the `.travis.yml` file of your repository.
 
     ```yaml
     after_success:
       - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
-      - ./send.sh success
+      - ./send.sh success $WEBHOOK_URL
     after_failure:
       - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
-      - ./send.sh failure
+      - ./send.sh failure $WEBHOOK_URL
     ```
 
 1.  Grab your coffee ☕ and enjoy! And, if you liked this, please ⭐**Star**
