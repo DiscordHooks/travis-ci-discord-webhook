@@ -4,7 +4,7 @@ if [ -z "$WEBHOOK_URLs" ]; then
   echo -e "WEBHOOK_URL environment variable is not defined in the settings. Unable to send webhook to Discord." && exit
 fi
 
-echo -e "[Webhook]: Sending webhook to Discord...\\n";
+echo -e "[Webhook]: Sending webhook to Discord: $WEBHOOK_URL...\\n";
 
 case $1 in
   "success" )
