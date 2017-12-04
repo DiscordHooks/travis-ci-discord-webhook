@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -z "$WEBHOOK_URLs" ]; then
-  echo -e "WEBHOOK_URL environment variable is not defined in the settings. Unable to send webhook to Discord." && exit
+if [ -z "$2" ]; then
+  echo -e "You need to pass the WEBHOOK_URL environment variable as the second argument to this script." && exit
 fi
 
 echo -e "[Webhook]: Sending webhook to Discord...\\n";
@@ -69,5 +69,5 @@ WEBHOOK_DATA='{
   } ]
 }'
 
-(curl -v --fail --progress-bar -A "TravisCI-Webhook" -H Content-Type:application/json -H X-Author:k3rn31p4nic#8383 -d "$WEBHOOK_DATA" "$WEBHOOK_URL" \
+(curl -v --fail --progress-bar -A "TravisCI-Webhook" -H Content-Type:application/json -H X-Author:k3rn31p4nic#8383 -d "$WEBHOOK_DATA" "$2" \
   && echo -e "\\n[Webhook]: Successfully set the webhook.") || echo -e "\\n[Webhook]: Unable to send webhook."
