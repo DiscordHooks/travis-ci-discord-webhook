@@ -18,7 +18,7 @@ just follow the guide below and stay notified of your build status.
 -  A cup of coffee ☕
 
 ## Guide
-1.  Create a webhook in your Discord Server ([Guide]((https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks)).
+1.  Create a webhook in your Discord Server ([Guide](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks)).
 
 1.  Copy the **Webhook URL**.
 
