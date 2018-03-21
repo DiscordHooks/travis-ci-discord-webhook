@@ -10,16 +10,19 @@ case $1 in
   "success" )
     EMBED_COLOR=3066993
     STATUS_MESSAGE="Passed"
+    AVATAR="https://travis-ci.org/images/logos/TravisCI-Mascot-blue.png"
     ;;
 
   "failure" )
     EMBED_COLOR=15158332
     STATUS_MESSAGE="Failed"
+    AVATAR="https://travis-ci.org/images/logos/TravisCI-Mascot-red.png"
     ;;
 
   * )
     EMBED_COLOR=0
     STATUS_MESSAGE="Status Unknown"
+    AVATAR="https://travis-ci.org/images/logos/TravisCI-Mascot-1.png"
     ;;
 esac
 
@@ -43,12 +46,13 @@ fi
 TIMESTAMP=$(date --utc +%FT%TZ)
 WEBHOOK_DATA='{
   "username": "",
-  "avatar_url": "",
+  "avatar_url": "https://travis-ci.org/images/logos/TravisCI-Mascot-1.png",
   "embeds": [ {
     "color": '$EMBED_COLOR',
     "author": {
       "name": "Job #'"$TRAVIS_JOB_NUMBER"' (Build #'"$TRAVIS_BUILD_NUMBER"') '"$STATUS_MESSAGE"' - '"$TRAVIS_REPO_SLUG"'",
-      "url": "https://travis-ci.org/'"$TRAVIS_REPO_SLUG"'/builds/'"$TRAVIS_BUILD_ID"'"
+      "url": "https://travis-ci.org/'"$TRAVIS_REPO_SLUG"'/builds/'"$TRAVIS_BUILD_ID"'",
+      "icon_url": "'$AVATAR'"
     },
     "title": "'"$COMMIT_SUBJECT"'",
     "url": "'"$URL"'",
