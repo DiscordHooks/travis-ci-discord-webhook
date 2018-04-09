@@ -48,3 +48,6 @@ just follow the guide below and stay notified of your build status.
 -  If you face any issues in the scripts (and you're sure it's not on your side),
 please consider opening an issue and I'll fix it ASAP.
 -  If you want to improve the scripts, feel free to open a pull request.
+
+### See Also
+-  [AppVeyor -> Discord Webhook](https://github.com/k3rn31p4nic/appveyor-discord-webhook)
