@@ -50,4 +50,4 @@ please consider opening an issue and I'll fix it ASAP.
 -  If you want to improve the scripts, feel free to open a pull request.
 
 ### See Also
--  [AppVeyor -> Discord Webhook](https://github.com/k3rn31p4nic/appveyor-discord-webhook)
+-  [AppVeyor -> Discord Webhook](https://github.com/DiscordHooks/appveyor-discord-webhook)
