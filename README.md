@@ -32,11 +32,11 @@ just follow the guide below and stay notified of your build status.
 
     ```yaml
     after_success:
-      - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+      - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
       - ./send.sh success $WEBHOOK_URL
     after_failure:
-      - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+      - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
       - chmod +x send.sh
       - ./send.sh failure $WEBHOOK_URL
     ```
@@ -50,4 +50,4 @@ please consider opening an issue and I'll fix it ASAP.
 -  If you want to improve the scripts, feel free to open a pull request.
 
 ### See Also
--  [AppVeyor -> Discord Webhook](https://github.com/k3rn31p4nic/appveyor-discord-webhook)
+-  [AppVeyor -> Discord Webhook](https://github.com/DiscordHooks/appveyor-discord-webhook)
