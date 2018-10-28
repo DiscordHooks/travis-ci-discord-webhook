@@ -1,0 +1,34 @@
+##################################################
+# Bastion GitHub Bot
+# Configuration File
+# https://github.com/TheBastionBot/Bastion-GitHub-Bot
+##################################################
+
+## Invite Contributors to Organization ##
+
+inviteContributors: true
+
+
+## Issue Welcome Comments ##
+
+# Comment to send on a user's first issue in the repository.
+firstIssueWelcomeComment: |
+  Thank you for opening this issue. A maintainer will get by as soon as possible to address this issue.
+  Since this is your first issue in this repository, please make sure to follow the issue template and provide as much detail as possible.
+
+# Comment to send on the user's forthcoming issues in the repository.
+issueWelcomeComment: |
+  Thank you for opening this issue. A maintainer will get by as soon as possible to address this issue.
+  In the mean time, please check out our contributing guidelines to explore other ways you can get involved.
+
+
+## Pull Request Welcome Comments ##
+
+# Comment to send on a user's first pull request in the repository.
+firstPullRequestWelcomeComment: |
+  Thank you for opening this pull request. A maintainer will get by as soon as possible to review this pull request.
+  Since this is your first pull request in this repository, please make sure to follow the pull request template and provide as much detail as possible.
+
+# Comment to send on the user's forthcoming pull requests in the repository.
+pullRequestWelcomeComment: |
+  Thank you for opening this pull request. A maintainer will get by as soon as possible to review this pull request.
