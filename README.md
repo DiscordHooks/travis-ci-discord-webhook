@@ -56,29 +56,27 @@ please consider opening an issue and I'll fix it ASAP.
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. <img src="https://opencollective.com/discordhooks/contributors.svg?width=890&button=false" />
+This project exists thanks to all the people who contribute. <img src="https://opencollective.com/DiscordHooks/contributors.svg?width=890&button=false" />
 
 
 ## Backers
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/discordhooks#backer)]
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/DiscordHooks#backer)]
 
-<a href="https://opencollective.com/discordhooks#backers" target="_blank"><img src="https://opencollective.com/discordhooks/backers.svg?width=890"></a>
+<a href="https://opencollective.com/DiscordHooks#backers" target="_blank"><img src="https://opencollective.com/DiscordHooks/backers.svg?width=890"></a>
 
 
 ## Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/discordhooks#sponsor)]
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/DiscordHooks#sponsor)]
 
-<a href="https://opencollective.com/discordhooks/sponsor/0/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/1/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/2/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/3/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/4/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/5/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/6/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/7/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/8/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/discordhooks/sponsor/9/website" target="_blank"><img src="https://opencollective.com/discordhooks/sponsor/9/avatar.svg"></a>
-
-
+<a href="https://opencollective.com/DiscordHooks/sponsor/0/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/1/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/2/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/3/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/4/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/5/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/6/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/7/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/8/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/DiscordHooks/sponsor/9/website" target="_blank"><img src="https://opencollective.com/DiscordHooks/sponsor/9/avatar.svg"></a>
