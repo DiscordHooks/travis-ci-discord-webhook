@@ -64,7 +64,7 @@ WEBHOOK_DATA='{
         "inline": true
       },
       {
-        "name": "Branch/Tag",
+        "name": "Branch",
         "value": "'"[\`$TRAVIS_BRANCH\`](https://github.com/$TRAVIS_REPO_SLUG/tree/$TRAVIS_BRANCH)"'",
         "inline": true
       }
