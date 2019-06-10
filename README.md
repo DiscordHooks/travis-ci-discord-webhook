@@ -53,6 +53,7 @@ please consider opening an issue and I'll fix it ASAP.
 
 ### See Also
 -  [AppVeyor -> Discord Webhook](https://github.com/DiscordHooks/appveyor-discord-webhook)
+-  [GitLab CI -> Discord Webhook](https://github.com/DiscordHooks/gitlab-ci-discord-webhook)
 
 ## Contributors
 
