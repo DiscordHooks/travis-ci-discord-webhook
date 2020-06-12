@@ -32,7 +32,7 @@ COMMIT_SUBJECT="$(git log -1 "$TRAVIS_COMMIT" --pretty="%s")"
 COMMIT_MESSAGE="$(git log -1 "$TRAVIS_COMMIT" --pretty="%b")" | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g'
 
 if [ ${#COMMIT_SUBJECT} -gt 256 ]; then
-  COMMIT_SUBJECT="$(echo "$COMMIT_SUBJECT" | cut -c 1-250)"
+  COMMIT_SUBJECT="$(echo "$COMMIT_SUBJECT" | cut -c 1-253)"
   COMMIT_SUBJECT+="..."
 fi
 
