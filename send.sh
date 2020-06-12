@@ -36,7 +36,7 @@ if [ ${#COMMIT_SUBJECT} -gt 256 ]; then
   COMMIT_SUBJECT+="..."
 fi
 
-if [ -n $COMMIT_MESSAGE ] && [ ${#COMMIT_MESSAGE} -gt 2048 ]; then
+if [ -n $COMMIT_MESSAGE ] && [ ${#COMMIT_MESSAGE} -gt 1900 ]; then
   COMMIT_MESSAGE="$(echo "$COMMIT_MESSAGE" | cut -c 1-1900)"
   COMMIT_MESSAGE+="..."
 fi
