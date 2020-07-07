@@ -42,6 +42,18 @@ just follow the guide below and stay notified of your build status.
       - chmod +x send.sh
       - ./send.sh failure $WEBHOOK_URL
     ```
+    If you use travis-ci.com, Add these instead.
+
+    ```yaml
+    after_success:
+      - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send2.sh
+      - chmod +x send2.sh
+      - ./send2.sh success $WEBHOOK_URL
+    after_failure:
+      - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send2.sh
+      - chmod +x send2.sh
+      - ./send2.sh failure $WEBHOOK_URL
+    ```
 
 1.  Grab your coffee ☕ and enjoy! And, if you liked this, please ⭐**Star**
     this repository to show your love.
