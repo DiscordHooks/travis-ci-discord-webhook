@@ -26,7 +26,9 @@ just follow the guide below and stay notified of your build status.
 
 1.  Go to your repository settings (for which you want status notifications)
     in Travis CI and add an environment variable called `WEBHOOK_URL` and paste
-    the **Webhook URL** you got in the previous step.
+    the **Webhook URL** you got in the previous step. You can also specify
+    multiple webhook addresses at once, separating each with a whitespace
+    character, such as space.
 
     ![Add environment variable in Travis CI](https://i.imgur.com/UfXIoZn.png)
 
