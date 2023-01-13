@@ -61,7 +61,6 @@ fi
 
 TIMESTAMP=$(date -u +%FT%TZ)
 WEBHOOK_DATA='{
-  "username": "",
   "avatar_url": "https://travis-ci.com/images/logos/TravisCI-Mascot-1.png",
   "embeds": [ {
     "color": '$EMBED_COLOR',
